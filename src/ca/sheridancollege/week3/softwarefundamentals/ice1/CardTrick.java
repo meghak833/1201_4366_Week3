@@ -16,6 +16,9 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
 import java.util.Scanner;
 public class CardTrick {
     
+    private int cardNum;
+    private String cardSuit;
+    
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
@@ -56,6 +59,14 @@ public class CardTrick {
                 System.out.println("Your card is " + cardNum + " of " + cardSuit); //prints out the user input
                 break;
         }
+        
     }
     
+   // @Override
+
+
+   // public String toString(){
+    //    return "Your card is " + cardNum + " of " + cardSuit; 
+   // }
+
 }
