@@ -11,11 +11,19 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha Patel
  */
+
+import java.util.Scanner;
 public class CardTrick {
     
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String cardInput = scan.nextLine();
+        
         
         for (int i=0; i<magicHand.length; i++)
         {

@@ -23,6 +23,14 @@ public class Card {
     /**
      * @return the suit
      */
+   
+   public Card(){
+       
+   }
+   
+   public enum cardNum{
+      
+,    }
     public String getSuit() {
         return suit;
     }
@@ -46,6 +54,11 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+    
+   @Override
+    public String toString(){
+         return null;
     }
    
    
