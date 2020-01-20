@@ -10,6 +10,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha Patel
+ * @modifier Genevieve Jose Bautista (991537802)
  */
 
 import java.util.Scanner;
@@ -18,23 +19,43 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
-        
-        
-        Scanner scan = new Scanner(System.in);
-        
-        String cardInput = scan.nextLine();
-        
-        
-        for (int i=0; i<magicHand.length; i++)
+        for(int i = 0; i<magicHand.length; i++ )
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue((int)((Math.random()*13) + 1));
+            c.setSuit(Card.SUITS[(int) (Math.random()*3)]);
+            magicHand[i] = c;
+            System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
         
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your card number: ");
+        int cardNum = scan.nextInt();
+        scan.nextLine();
+        System.out.println("Enter yout card suit");//promts the user to enter their card suit
+        String cardSuit = scan.nextLine();
+       
+        Card userCard = new Card();
+        userCard.setValue(cardNum);
+        userCard.setSuit(cardSuit);
+        
+        switch (cardNum) {
+            case 13:
+                System.out.println("Your card is King of " + cardSuit); //prints out the user input
+                break;
+            case 12:
+                System.out.println("Your card is Queen of " + cardSuit); //prints out the user input
+                break;
+            case 11:
+                System.out.println("Your card is Jsck of " + cardSuit); //prints out the user input
+                break;
+            case 1:             
+                System.out.println("Your card is Ace of " + cardSuit); //prints out the user input
+                break;
+            default:
+                System.out.println("Your card is " + cardNum + " of " + cardSuit); //prints out the user input
+                break;
+        }
     }
     
 }
