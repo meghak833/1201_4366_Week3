@@ -50,7 +50,7 @@ public class CardTrick {
                 System.out.println("Your card is Queen of " + cardSuit); //prints out the user input
                 break;
             case 11:
-                System.out.println("Your card is Jsck of " + cardSuit); //prints out the user input
+                System.out.println("Your card is Jack of " + cardSuit); //prints out the user input
                 break;
             case 1:             
                 System.out.println("Your card is Ace of " + cardSuit); //prints out the user input
