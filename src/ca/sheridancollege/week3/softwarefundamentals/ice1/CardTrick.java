@@ -26,10 +26,23 @@ public class CardTrick {
             c.setValue((int) ((Math.random()*13) + 1));
             c.setSuit(Card.SUITS[(int) (Math.random()*4)]);
             magicHand[i] = c;
-            System.out.println(magicHand[i].getValue() + 
+            System.out.println(magicHand[i].getValue() + " " +
                         magicHand[i].getSuit());
-
         }
+        
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your card value");
+        int cardValue = in.nextInt();
+        in.nextLine();
+        System.out.println("Enter your card suit");
+        String cardSuit = in.nextLine();
+        Card theirCard = new Card();
+        theirCard.setValue(cardValue);
+        theirCard.setSuit(cardSuit);
+        
+        System.out.println("Your luck card is " + theirCard.getValue() + " " + 
+                theirCard.getHearts());
+
         
         
         
@@ -37,6 +50,9 @@ public class CardTrick {
     }
     
 }
+
+
+
 
 
 
