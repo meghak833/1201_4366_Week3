@@ -10,6 +10,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha Patel
+ * @modifer Mamoun Diab
+ * Student ID: 991512241
  */
 public class CardTrick {
     
