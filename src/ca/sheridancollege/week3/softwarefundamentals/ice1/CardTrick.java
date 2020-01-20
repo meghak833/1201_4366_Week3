@@ -25,6 +25,7 @@ public class CardTrick {
             Card c = new Card();
             c.setValue((int) Math.random()*13);
             c.setSuit(Card.SUITS[]);
+            //issues with code not running
         }
         
         //insert code to ask the user for Card value and suit, create their card
