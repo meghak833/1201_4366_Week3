@@ -41,7 +41,7 @@ public class CardTrick {
         theirCard.setSuit(cardSuit);
         
         System.out.println("Your luck card is " + theirCard.getValue() + " " + 
-                theirCard.getHearts());
+                theirCard.getSuit());
 
         
         
@@ -50,6 +50,7 @@ public class CardTrick {
     }
     
 }
+
 
 
 
