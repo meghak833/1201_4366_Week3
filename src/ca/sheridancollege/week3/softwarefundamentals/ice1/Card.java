@@ -65,4 +65,8 @@ public class Card {
 		this.value = value;
 	}
 
+	@Override
+	public String toString() {
+		return "Value is " + this.getValue() + ", Suit is " + this.getSuit();
+	}
 }
