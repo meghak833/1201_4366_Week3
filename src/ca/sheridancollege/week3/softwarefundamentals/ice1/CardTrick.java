@@ -50,9 +50,12 @@ public class CardTrick {
                ifFound = true;
                break;
            }
+           else {
+               ifFound = false;
+           }
        }
        
-       if(ifFound == true){
+       if(ifFound == false){
            System.out.println("Card was not in deck");
        }
         
