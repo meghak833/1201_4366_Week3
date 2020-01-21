@@ -41,6 +41,36 @@ public class CardTrick {
                else {   System.out.println("You Chose : " + "\n" + cardValue + " of " + cardSuit);
                    
                }
+     System.out.println("\n" + "7 cards are :" );
+        for (int i=0; i<magicHand.length; i++)
+        { Card c = new Card();
+        int num = rnd.nextInt(14);
+          System.out.println("\n");
+            c.setValue(num);
+            int num2 = rnd.nextInt(4);
+            c.setSuit(Card.SUITS[num2]);
+            if ( num == 0) {
+            System.out.println(" Ace of " + Card.SUITS[num2]); }
+            else if ( num == 1) {
+            System.out.println(" Ace of " + Card.SUITS[num2]); }
+            else if ( num == 11) {
+            System.out.println(" Jack of " + Card.SUITS[num2]); }
+            else if ( num == 12) {
+            System.out.println(" Queen of " + Card.SUITS[num2]); }
+            else if ( num == 13) {
+            System.out.println(" King of " + Card.SUITS[num2]); }
+            else if ( num > 13) {
+            System.out.println( " Card Number only between 0 and 13 please !!");
+              break;}
+            else { System.out.println(num + " of " + Card.SUITS[num2]);
+                
+            }
+            if (cardValue==num && Card.SUITS[num2].equals(cardSuit))
+            { System.out.println("Congratulions , You are really Lucky"); }
+            else if (cardValue!=num || Card.SUITS[num2].equals(cardSuit))
+            { System.out.println("Oooops , Try Again !!!"); }
+            
+        }
            
         
     
