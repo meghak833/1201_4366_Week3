@@ -34,9 +34,40 @@ public class CardTrick {
             magicHand[i] = c;
             System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
-                           
-        // and search magicHand here
-        //Then report the result here
-    }
+        
+       
+        //Adding print statements
+        System.out.println("Please enter a card number:");
+        int card = input.nextInt();
+        input.nextLine();
+        System.out.println("Enter the SUIT of the card:");
+        String suit = input.nextLine();
+
+
+       
+        //Creating the object
+        Card usersCard = new Card();
+        usersCard.setValue(card);
+        usersCard.setSuit(suit);
+
+      //Using switch to be able to identify face cards and the ace
+      switch (card) {
+            case 13:
+                System.out.println("Your card is King of " + suit); //prints out the user input
+                break;
+            case 12:
+                System.out.println("Your card is Queen of " + suit); //prints out the user input
+                break;
+            case 11:
+                System.out.println("Your card is Jack of " + suit); //prints out the user input
+                break;
+            case 1:
+                System.out.println("Your card is Ace of " + suit); //prints out the user input
+                break;
+            default:
+                System.out.println("Your card is " + card + " of " + suit); //prints out the user input
+                break;
+      }
     
+    }
 }
