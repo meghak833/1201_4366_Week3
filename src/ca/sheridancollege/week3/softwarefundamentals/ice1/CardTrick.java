@@ -27,8 +27,7 @@ public class CardTrick {
         boolean ifFound = false; // Used to check if users card is in deck
         
         // Sets the magicHand with random numbers and suits
-        for (int i=0; i<magicHand.length; i++)
-        {
+        for (int i=0; i<magicHand.length; i++){
             Card c = new Card();
             c.setValue((int)(Math.random() * 13));
             c.setSuit(Card.SUITS[(int)(Math.random() * 4)]);
