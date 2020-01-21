@@ -45,5 +45,8 @@ public class CardTrick {
             break;
         }
         System.out.println(result ? "Found" : "Not Found");
+        for (Card card : magicHand) {
+            System.out.println(card);
+        }
     }
 }
