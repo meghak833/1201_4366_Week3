@@ -71,6 +71,10 @@ public class CardTrick {
             { System.out.println("Oooops , Try Again !!!"); }
             
         }
+       
+        System.out.println("\n" + "I Think King Of Hearts is your Lucky Card Number" + "\n" + "Thanks For Playing");
+        
+        
            
         
     
