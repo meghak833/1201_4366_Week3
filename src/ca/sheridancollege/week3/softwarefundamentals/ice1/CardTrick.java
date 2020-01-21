@@ -5,7 +5,7 @@
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 
@@ -27,11 +27,11 @@ public class CardTrick {
         
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
-            c.setValue((int)Math.random());
-            c.setSuit(Card.SUITS[[new Random().nextInt(SUITS.length)]);
-            //Cannot run due to unresolved issue with this line of code.
-            
+           Card c = new Card();
+            c.setValue((int)((Math.random()*13) + 1));
+            c.setSuit(Card.SUITS[(int)(Math.random()*3)]);
+            magicHand[i] = c;
+            System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
         
         //insert code to ask the user for Card value and suit, create their card
