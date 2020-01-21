@@ -18,9 +18,9 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-        int cardValue = 0;
-        int suitNum = 0;
+        Scanner sc = new Scanner(System.in); // Used for user input
+        int cardValue = 0; // Card value
+        int suitNum = 0; // Suit value
         Card[] magicHand = new Card[7];
         Card[] userHand = new Card[1];
         
