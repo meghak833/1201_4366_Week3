@@ -24,7 +24,7 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
         }
         
-        Card c = new C();
+        Card c = new Card();
         Scanner in = new Scanner(System.in);
         System.out.print("Enter card value: ");
         int value = in.nextInt();
@@ -32,7 +32,7 @@ public class CardTrick {
         Scanner in2 = new Scanner(System.in);
         System.out.print("Enter card suit: ");
         String suit = in2.nextLine();
-        c.setSuit(C.SUITS[(int)(Math.random()*4)]);
+        c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
         
         System.out.println("Your lucky card is the "+c.getValue()+" of "
         		+c.getSuit());
