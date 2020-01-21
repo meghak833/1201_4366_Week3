@@ -27,14 +27,11 @@ public class CardTrick {
             c.setValue(random.nextInt(13)+1);
             c.setSuit(Card.SUITS[random.nextInt(4)]);
             magicHand[i]=c;
-        }
- 
-        
+        }    
         
          //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
-        //Then report the result here
-        
+        //Then report the result here       
         
         System.out.println ("Enter your card number ");
         int cardNum = scan.nextInt();
@@ -54,12 +51,6 @@ public class CardTrick {
         else {
             System.out.println("Card " + j + " doesn't match");
         }
-        
-        
-        
-        
-
-    }
-    
-}
+    }   
+  }
 }
