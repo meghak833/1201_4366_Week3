@@ -16,7 +16,6 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-    	
     	Card[] magicHand = new Card[7];
         
         for (int i=0; i<magicHand.length; i++)
@@ -27,16 +26,21 @@ public class CardTrick {
         }
         
         Card c = new Card();
-        Scanner in = new Scanner(System.in); // creates scanner for the card value
+        // creates scanner for the card value
+        Scanner in = new Scanner(System.in);
         System.out.print("Enter card value: ");
         int value = in.nextInt();
-        c.setValue((int)((Math.random()*13)+1)); // sets the random value for the card value
-        Scanner in2 = new Scanner(System.in); // creates scanner for the card suit
+        // sets the random value for the card value
+        c.setValue((int)((Math.random()*13)+1));
+        // creates scanner for the card suit
+        Scanner in2 = new Scanner(System.in); 
         System.out.print("Enter card suit: ");
         String suit = in2.nextLine();
-        c.setSuit(Card.SUITS[(int)(Math.random()*4)]); // sets the random suit for the card suit
+        // sets the random suit for the card suit
+        c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
         
-        System.out.println("Your lucky card is the "+c.getValue()+" of " // prints your lucky card
+        // prints your lucky card
+        System.out.println("Your lucky card is the "+c.getValue()+" of "
         		+c.getSuit());
     } 
 }
