@@ -43,9 +43,11 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+        
     @Override
     public String toString() {
         return "The card number is " + this.value + " and card suit is " + this.suit;
     }
-  } 
+   
 }
