@@ -68,6 +68,7 @@ public class CardTrick {
                 System.out.println("Your card is " + card + " of " + suit); //prints out the user input
                 break;
       }
+      
     
     }
 }
