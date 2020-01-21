@@ -19,7 +19,7 @@ import java.util.Scanner;
  * 
  */
 public class CardTrick {
-    
+   
     public static void main(String[] args)
     {
         
@@ -36,7 +36,6 @@ public class CardTrick {
         }
                            
         // and search magicHand here
-        // test comment
         //Then report the result here
     }
     
