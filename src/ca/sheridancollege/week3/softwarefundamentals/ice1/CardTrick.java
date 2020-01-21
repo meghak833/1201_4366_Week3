@@ -27,8 +27,9 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            c.setValue((int)Math.random() + 11);
-            c.setSuit(Card.SUITS[(int) Math.random() + 3]);
+            magicHand[i] = c.setValue((int)(Math.random() * 13));
+            magicHand[i] = c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
+            System.out.println(c.toString());
         }
         
        
