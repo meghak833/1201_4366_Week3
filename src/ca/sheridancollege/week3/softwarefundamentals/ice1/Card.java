@@ -14,6 +14,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * add your name as a modifier.
  * @author Megha Patel
  * @Modifier: Tyler Makris
+ * @Student #: 991571812
  */
 public class Card {
 
@@ -49,6 +50,8 @@ public class Card {
         this.value = value;
     }
    
-   
+   public String toString(){
+      return "Card value is " + getValue() + ". Suit value is " + getSuit();
+   }
     
 }
