@@ -35,6 +35,7 @@ public class CardTrick {
         }
                            
         // and search magicHand here
+        // test comment
         //Then report the result here
     }
     
