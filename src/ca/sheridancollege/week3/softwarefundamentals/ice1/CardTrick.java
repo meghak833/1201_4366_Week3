@@ -12,6 +12,7 @@ import java.util.Scanner;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha Patel
+ * @modifier Hiba Bhutta
  */
 public class CardTrick {
     
@@ -23,14 +24,40 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            c.setValue((int) Math.random()*13);
-            c.setSuit(Card.SUITS[]);
-            //issues with code not running
+            c.setValue((int)((Math.random()*13) + 1));
+            c.setSuit(Card.SUITS[(int)(Math.random()*3)]);
+            magicHand[i] = c;
+            System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
         
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+        System.out.println("Please enter a card number:");
+        int card = input.nextInt();
+        input.nextLine();
+        System.out.println("Enter the SUIT of the card:");
+        String suit = input.nextLine();
+        
+        
+        Card usersCard = new Card(); //creating object
+        usersCard.setValue(card);
+        usersCard.setSuit(suit);
+        
+        
+      switch (card) {
+            case 13:
+                System.out.println("Your card is King of " + suit); //prints out the user input
+                break;
+            case 12:
+                System.out.println("Your card is Queen of " + suit); //prints out the user input
+                break;
+            case 11:
+                System.out.println("Your card is Jack of " + suit); //prints out the user input
+                break;
+            case 1:             
+                System.out.println("Your card is Ace of " + suit); //prints out the user input
+                break;
+            default:
+                System.out.println("Your card is " + card + " of " + suit); //prints out the user input
+                break;
     }
-    
+    }
 }
