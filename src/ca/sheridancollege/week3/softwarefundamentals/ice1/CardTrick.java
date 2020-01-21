@@ -56,8 +56,7 @@ public class CardTrick {
              
          }
          
-            System.out.println(c.getValue());
-            System.out.println(c.getSuit());
+ 
                
            
         }
