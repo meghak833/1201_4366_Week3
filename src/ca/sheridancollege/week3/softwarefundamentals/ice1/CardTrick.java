@@ -37,27 +37,6 @@ public class CardTrick {
         String suit = input.nextLine();
         
         
-        Card usersCard = new Card(); //creating object
-        usersCard.setValue(card);
-        usersCard.setSuit(suit);
         
-        
-      switch (card) {
-            case 13:
-                System.out.println("Your card is King of " + suit); //prints out the user input
-                break;
-            case 12:
-                System.out.println("Your card is Queen of " + suit); //prints out the user input
-                break;
-            case 11:
-                System.out.println("Your card is Jack of " + suit); //prints out the user input
-                break;
-            case 1:             
-                System.out.println("Your card is Ace of " + suit); //prints out the user input
-                break;
-            default:
-                System.out.println("Your card is " + card + " of " + suit); //prints out the user input
-                break;
-    }
     }
 }
