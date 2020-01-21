@@ -14,6 +14,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * @modifier Zehao Chen
  * ID: 991583852
  */
+import java.util.Scanner;
+
 public class CardTrick {
 
 	public static void main(String[] args) {
@@ -32,6 +34,20 @@ public class CardTrick {
 		//insert code to ask the user for Card value and suit, create their card
 		// and search magicHand here
 		//Then report the result here
-	}
+		Scanner sc = new Scanner(System.in);
+		Card userCard = new Card();
+		System.out.print("Enter card's value: ");
+		userCard.setValue(sc.nextInt());
+		System.out.print("Enter card's suit: ");
+		userCard.setSuit(sc.next());
+		sc.close();
 
+		for (int j = 0; j < magicHand.length; j++) {
+			if (userCard.toString().equals(magicHand[j].toString())) {
+				System.out.println("Your card is found!");
+			} else {
+				System.out.println("Your card is not found!");
+			}
+		}
+	}
 }
