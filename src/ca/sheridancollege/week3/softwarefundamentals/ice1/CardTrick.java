@@ -34,9 +34,9 @@ public class CardTrick {
             magicHand[i] = c;
             System.out.println(magicHand[i].getValue() + " " + magicHand[i].getSuit());
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
+                           
         // and search magicHand here
+        // test comment
         //Then report the result here
     }
     
