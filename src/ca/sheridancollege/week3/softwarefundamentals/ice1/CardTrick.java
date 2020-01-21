@@ -33,8 +33,7 @@ public class CardTrick {
             //Cannot run due to unresolved issue with this line of code.
             
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
+                           
         // and search magicHand here
         //Then report the result here
     }
