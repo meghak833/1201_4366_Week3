@@ -61,26 +61,6 @@ public class CardTrick {
                 }
             
         }
-        
-        /*
-        Card aCard = new Card();
-        aCard.setSuit("g");
-        aCard.setValue(1);
-*/
-        //System.out.println("aCard" + aCard.tostring());
-      /*  
-        if((uCard.getValue() ==  aCard.getValue()) && (uCard.getSuit() ==  aCard.getSuit())){
-            System.out.println("a and b match");
-        }else{
-            System.out.println("a and b dismatch");
-        }
-*/
-        
-       
-       
-        
-        //lucky card feature 
-        
        
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
